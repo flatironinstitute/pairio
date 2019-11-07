@@ -1,0 +1,26 @@
+{
+    "channels": [
+        {
+            "name": "name-of-readwrite-channel",
+            "password": "password-for-channel",
+            "collections": [
+                {
+                    "name": "name-of-collection",
+                    "maxNumGetsPerMinute": 1000,
+                    "maxNumSetsPerMinute": 1000
+                }
+            ]
+        },
+        {
+            "name": "name-of-readonly-channel",
+            "password": "password-for-readonly-channel",
+            "collections": [
+                {
+                    "name": "name-of-collection",
+                    "maxNumGetsPerMinute": 1000,
+                    "maxNumSetsPerMinute": 0
+                }
+            ]
+        }
+    ]
+}

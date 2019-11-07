@@ -1,0 +1,17 @@
+# Pull the docker image (or build it, see below)
+docker pull magland/pairio2
+
+# Set the following environment variables:
+PAIRIO_DIR=/full/path/to/pairio/directory
+MONGODB_PORT=27017 or whatever
+
+# Run the docker image
+docker run -v $PAIRIO_DIR:/pairio_dir -p $PORT:8080 -p $MONGODB_PORT:27017 -it magland/pairio2
+
+You will need to create a pairio.json configuration file in the pairio directory.
+An example configuration file can be found in example_pairio.json
+
+#############################################################
+
+# To build (replace magland/pairio2 with whatever you like):
+docker build -t magland/kachery2 .
