@@ -1,0 +1,8 @@
+{
+    "default_readonly": {
+        "url": "..."
+    },
+    "default_readwrite": {
+        "url": "..."
+    }
+}
